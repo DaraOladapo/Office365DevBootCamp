@@ -12,6 +12,7 @@ namespace Office365DevBootCamp.Web.Models.Data
         public Guid AttendeeID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string  FullName { get {return $"{FirstName} {LastName}";} }
         public string EmailAddress { get; set; }
         public string PhoneNumber { get; set; }
         public DateTime RegistrationDate { get; set; }
