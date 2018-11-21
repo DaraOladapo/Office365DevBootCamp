@@ -44,18 +44,13 @@
     "actions": [
         {
             "type": "Action.OpenUrl",
-            "title": "Add to Calendar",
-            "url": "http://events.windforcecorp.com/api/event/confirm/#AttendeeID"
-        },
-        {
-            "type": "Action.OpenUrl",
-            "title": "Website",
-            "url": "http://events.windforcecorp.com/api/event/decline/#AttendeeID"
+            "title": "Visit Website",
+            "url": "http://events.windforcecorp.com/"
         },
         {
             "type": "Action.OpenUrl",
             "title": "Cancel Registration",
-            "url": "http://events.windforcecorp.com/api/event/decline/#AttendeeID"
+            "url": "http://events.windforcecorp.com/api/event/cancel/#AttendeeID"
         }
     ],
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
