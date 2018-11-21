@@ -54,6 +54,7 @@ namespace Office365DevBootCamp.Web.Controllers.API
             var _Attendee = _context.Attendees.Add(attendee);
             await _context.SaveChangesAsync();
             await Services.EmailService.SendRegistrationEmail(attendee);
+
             return Created($"http://events.windforcecorp.com/{_Attendee.Entity.AttendeeID.ToString()}", _Attendee);
         }
     }
