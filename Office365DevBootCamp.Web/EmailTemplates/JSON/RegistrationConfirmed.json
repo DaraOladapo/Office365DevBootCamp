@@ -19,7 +19,7 @@
                                 {
                                     "type": "TextBlock",
                                     "spacing": "None",
-                                    "text": "Registered {{DATE(#RegistrationDate,SHORT)}}",
+                                    "text": "Confirmed {{DATE(#RegistrationDate,SHORT)}}",
                                     "isSubtle": true,
                                     "wrap": true
                                 }
@@ -35,7 +35,7 @@
             "items": [
                 {
                     "type": "TextBlock",
-                    "text": "Hey there #FirstName.\nWe received your registration for Windforce Corp Annual Developer Conference. To be sure that it is you, we will need you to confirm your registration.",
+                    "text": "Hey there #FirstName.\nYour registration for Windforce Corp Developer is successful.",
                     "wrap": true
                 }
             ]
@@ -44,12 +44,17 @@
     "actions": [
         {
             "type": "Action.OpenUrl",
-            "title": "Confirm Registration",
+            "title": "Add to Calendar",
             "url": "http://events.windforcecorp.com/api/event/confirm/#AttendeeID"
         },
         {
             "type": "Action.OpenUrl",
-            "title": "Decline",
+            "title": "Website",
+            "url": "http://events.windforcecorp.com/api/event/decline/#AttendeeID"
+        },
+        {
+            "type": "Action.OpenUrl",
+            "title": "Cancel Registration",
             "url": "http://events.windforcecorp.com/api/event/decline/#AttendeeID"
         }
     ],
