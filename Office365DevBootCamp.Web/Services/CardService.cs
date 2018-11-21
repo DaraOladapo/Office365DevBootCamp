@@ -22,7 +22,7 @@ namespace Office365DevBootCamp.Web.Services
             {
                 Url = new Uri("http://adaptivecards.io/content/cats/1.png")
             });
-
+            //_AdaptiveCard.Actions.Add();
             // serialize the card to JSON
             string json = _AdaptiveCard.ToJson();
             return json;

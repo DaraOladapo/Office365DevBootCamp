@@ -62,19 +62,16 @@ namespace Office365DevBootCamp.Web.Controllers.API
 
             // Build a simple card
             // In the real world this would probably be provided as JSON
-            var Actions = new List<AdaptiveAction>();
-            Actions.Add(
-                item: 
-            );
             AdaptiveCard card = new AdaptiveCard()
             {
                 Body = new List<AdaptiveElement>(){
-new AdaptiveContainer(){},
-new AdaptiveContainer(){}
+                    new AdaptiveContainer(){},
+                    new AdaptiveContainer(){}
                 },
                 Actions = new List<AdaptiveAction>()
                 {
-
+                    new AdaptiveOpenUrlAction(){},
+                    new AdaptiveOpenUrlAction(){}
                 }
             };
 
